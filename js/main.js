@@ -7,8 +7,26 @@ $(".slider_2").slick({
   arrows: false,
   dots: true,
   slidesToShow: 3,
-  slidesToScroll: 3
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
+new WOW({
+  boxClass: "wow", // default
+  animateClass: "animated", // default
+  offset: 0, // default
+  mobile: false, // default
+  live: true // default
+}).init();
 $(document).ready(function() {
   /* Get iframe src attribute value i.e. YouTube video url
   and store it in a variable */
@@ -42,3 +60,10 @@ function scrollBanner() {
   }
 }
 window.addEventListener("scroll", scrollBanner);
+
+$(".menu_btn").click(function() {
+  $(".menu").addClass("active_mobile_menu");
+});
+$(".close_menu").click(function() {
+  $(".menu").removeClass("active_mobile_menu");
+});
