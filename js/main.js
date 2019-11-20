@@ -69,3 +69,4 @@ $(".close_menu").click(function() {
   $("body").css("overflow-y", "unset");
   $(".menu").removeClass("active_mobile_menu");
 });
+$(".phone").mask("+380(00)000-00-00");

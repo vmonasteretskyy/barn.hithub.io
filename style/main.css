@@ -15,6 +15,9 @@ button,
 a {
   cursor: pointer;
 }
+a:hover {
+  color: #866e52;
+}
 button:focus {
   outline: none;
 }
