@@ -63,7 +63,9 @@ window.addEventListener("scroll", scrollBanner);
 
 $(".menu_btn").click(function() {
   $(".menu").addClass("active_mobile_menu");
+  $("body").css("overflow-y", "hidden");
 });
 $(".close_menu").click(function() {
+  $("body").css("overflow-y", "unset");
   $(".menu").removeClass("active_mobile_menu");
 });
