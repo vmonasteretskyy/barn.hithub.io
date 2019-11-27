@@ -753,6 +753,23 @@ footer {
 .equipment p {
   line-height: 140%;
 }
+.soc_side a:hover path {
+  fill: #866e52;
+  fill-opacity: 1;
+}
+.play_btn {
+  cursor: pointer;
+}
+.language_block a:hover {
+  color: #a58e73;
+}
+.play_btn svg {
+  width: 100%;
+  height: 100%;
+}
+.play_btn:hover path {
+  fill: #866e52;
+}
 @media (min-width: 576px) {
   #modal_thanks .modal-dialog {
     max-width: 700px;
