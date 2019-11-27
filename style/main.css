@@ -330,8 +330,8 @@ h3 {
 }
 
 .slider .slick-dots .slick-active button {
-  background-color: #866e52;
-  border: 1px solid #866e52;
+  background-color: #a58e73;
+  border: 1px solid #a58e73;
 }
 .plan_wrap {
   position: relative;
@@ -360,7 +360,7 @@ h3 {
 .plan_dscr {
   display: flex;
   flex-wrap: wrap;
-  color: #866e52;
+  color: #a58e73;
   font-size: 19px;
   line-height: 19px;
   font-weight: 500;
@@ -390,14 +390,16 @@ h3 {
 
 .plan_img {
   position: relative;
-  overflow: hidden;
   max-width: 100%;
   max-height: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-
+.modal_form .btn_main {
+  background-color: transparent !important;
+  border: none;
+}
 .slide_wrap {
   position: relative;
 }
@@ -640,9 +642,7 @@ footer {
   margin-bottom: 25px;
   color: #866e52;
 }
-.plan_tooltip li:nth-child(odd) {
-  margin-right: 30px;
-}
+
 .tiengle_up {
   width: 0;
   height: 0;
@@ -673,7 +673,8 @@ footer {
   width: fit-content;
   max-width: 700px;
 }
-.modal_form {
+.modal_form,
+.thanks_modal {
   background: #333333;
   border-radius: 2px;
   border: 5px solid rgba(255, 255, 255, 0.5);
@@ -681,6 +682,26 @@ footer {
   color: #eaeaea;
   font-size: 23px;
   line-height: 129%;
+}
+.thanks_modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thanks_modal p:first-child {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 129%;
+  text-align: center;
+  color: #a58e73;
+  margin-bottom: 37px;
+}
+.thanks_modal p:last-child {
+  font-size: 23px;
+  line-height: 129%;
+  color: #eaeaea;
 }
 .form_title {
   font-family: "Raleway", sans-serif;
@@ -716,6 +737,29 @@ footer {
   position: absolute;
   top: 25px;
   left: 25px;
+}
+.plan_tooltip sup {
+  font-size: 14px;
+}
+.plan_tooltip li {
+  color: #a58e73;
+}
+.plan_tooltip {
+  padding-bottom: 0px;
+}
+.equipment_name p {
+  font-weight: 600;
+}
+.equipment p {
+  line-height: 140%;
+}
+@media (min-width: 576px) {
+  #modal_thanks .modal-dialog {
+    max-width: 700px;
+  }
+  .thanks_modal {
+    min-height: 600px;
+  }
 }
 @media (max-width: 1750px) {
   .side_bar {
@@ -922,7 +966,8 @@ footer {
   .form_title {
     font-size: 25px;
   }
-  .modal_form {
+  .modal_form,
+  .thanks_modal {
     font-size: 16px;
     padding: 50px 70px 60px 70px;
   }
@@ -967,13 +1012,17 @@ footer {
   }
 }
 @media (max-width: 575.9px) {
+  .proj_dscr {
+    bottom: 55px;
+  }
   #modal_two .modal_form {
     padding-bottom: 10px;
   }
   .modal_with_form .modal-dialog {
     width: 95%;
   }
-  .modal_form {
+  .modal_form,
+  .thanks_modal {
     padding: 50px 10%;
   }
   .form_title {
@@ -1118,6 +1167,12 @@ footer {
   .slider_2 .slick-dots li button {
     width: 10px;
     height: 10px;
+  }
+  .equipment li > div {
+    padding: 10px;
+  }
+  .equipment_text {
+    padding-top: 5px !important;
   }
 }
 /* 

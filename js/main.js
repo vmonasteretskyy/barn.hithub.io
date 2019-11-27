@@ -1,6 +1,7 @@
 $(".slider_1").slick({
   arrows: false,
-  dots: true
+  dots: true,
+  adaptiveHeight: true
 });
 
 $(".slider_2").slick({

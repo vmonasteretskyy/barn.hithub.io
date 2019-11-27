@@ -16,6 +16,27 @@
     <title>Home</title>
   </head>
   <body>
+    <!-- Modal thanks -->
+    <div
+      class="modal fade "
+      id="modal_thanks"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content thanks_modal">
+          <div>
+            <p>
+                Дякуємо!
+            </p>
+            <p>
+                Ми отримали Ваше повідомлення і найближчим часом зв’яжемося з Вами            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Modal -->
     <div
       class="modal fade modal_with_form"
@@ -70,6 +91,108 @@
     <!-- Modal -->
     <div
       class="modal fade modal_with_form"
+      id="modal_fourth"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <form class="modal_form" action="">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./img/close.svg" alt="" />
+            </button>
+            <div class="form_title">
+              Бажаєте отримати більше проектів?
+            </div>
+            <p>
+              Вкажіть своє ім'я та номер телефону і ми зв’яжемося із Вами
+            </p>
+            <input type="text" placeholder="Ваше iм’я" />
+            <input class="phone" type="tel" placeholder="Ваш номер телефону" />
+            <button type="submit" class="btn_main" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Залишити заявку
+              <svg
+                width="78"
+                height="8"
+                viewBox="0 0 78 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77.3536 4.35355C77.5488 4.15829 77.5488 3.84171 77.3536 3.64645L74.1716 0.464466C73.9763 0.269204 73.6597 0.269204 73.4645 0.464466C73.2692 0.659728 73.2692 0.976311 73.4645 1.17157L76.2929 4L73.4645 6.82843C73.2692 7.02369 73.2692 7.34027 73.4645 7.53553C73.6597 7.7308 73.9763 7.7308 74.1716 7.53553L77.3536 4.35355ZM0 4.5H77V3.5H0V4.5Z"
+                  fill="#eaeaea"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade modal_with_form"
+      id="modal_three"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <form class="modal_form" action="">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./img/close.svg" alt="" />
+            </button>
+            <div class="form_title">
+              Бажаєте дізнатись більше?
+            </div>
+            <p>
+              Вкажіть своє ім'я та номер телефону і ми зв’яжемося із Вами
+            </p>
+            <input type="text" placeholder="Ваше iм’я" />
+            <input class="phone" type="tel" placeholder="Ваш номер телефону" />
+            <button type="submit" class="btn_main" href="#" data-target="#modal_three">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Залишити заявку
+              <svg
+                width="78"
+                height="8"
+                viewBox="0 0 78 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77.3536 4.35355C77.5488 4.15829 77.5488 3.84171 77.3536 3.64645L74.1716 0.464466C73.9763 0.269204 73.6597 0.269204 73.4645 0.464466C73.2692 0.659728 73.2692 0.976311 73.4645 1.17157L76.2929 4L73.4645 6.82843C73.2692 7.02369 73.2692 7.34027 73.4645 7.53553C73.6597 7.7308 73.9763 7.7308 74.1716 7.53553L77.3536 4.35355ZM0 4.5H77V3.5H0V4.5Z"
+                  fill="#eaeaea"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade modal_with_form"
       id="modal_two"
       tabindex="-1"
       role="dialog"
@@ -88,17 +211,13 @@
               <img src="./img/close.svg" alt="" />
             </button>
             <div class="form_title">
-              Цікавить вартість доставки?
+              У Вас є запитання?
             </div>
             <p>
-              Залишіть заявку і наш менеджер зателефонує Вам
+              Напишіть нам і найближчим часом ми дамо Вам відповідь
             </p>
             <input type="text" placeholder="Ваше iм’я" />
             <input class="phone" type="tel" placeholder="Ваш номер телефону" />
-            <p class="or">
-              або
-            </p>
-            <input name="mail" type="email" placeholder="Ваш email" />
             <textarea
               name=""
               id=""
@@ -364,7 +483,7 @@
               <a
                 class="btn_main"
                 data-toggle="modal"
-                data-target="#modal_two"
+                data-target="#modal_three"
                 href="#"
               >
                 <span></span>
@@ -403,13 +522,10 @@
                 <div class="relative_block">
                   <div class="proj_dscr">
                     <span class="proj_name">
-                      Барн
-                      <span class="gold_text">
-                        30
-                      </span></span
-                    >
+                      Барн-40
+                    </span>
                     <span class="proj_price">
-                      380 500 грн
+                      386 00 грн
                     </span>
                   </div>
                   <div class="slider slider_1">
@@ -438,13 +554,11 @@
                     <ul class="plan_tooltip">
                       <div class="tiengle_up"></div>
                       <li>
-                        3,77 м2 - санвузол
-                      </li>
-                      <li>
-                        5,36 м2 - кухонна зона
-                      </li>
-                      <li>
-                        2,62 м2 - гардероб
+                        4 м
+                        <sup>
+                          2
+                        </sup>
+                        - санвузол
                       </li>
                     </ul>
                   </div>
@@ -453,19 +567,19 @@
                 <div class="plan_dscr">
                   <div class="area">
                     <img src="./img/blueprint1.svg" alt="" />
-                    <span> 30 м<sup>2</sup> </span>
+                    <span> 40 м<sup>2</sup> </span>
                   </div>
                   <div class="kitchen">
                     <img src="./img/kitchen1.svg" alt="" />
-                    <span> 27,14 м<sup>2</sup> - кухня-вітальня</span>
+                    <span>12 м<sup>2</sup> - кухня-вітальня</span>
                   </div>
                   <div class="bedroom">
                     <img src="./img/bed1.svg" alt="" />
-                    <span>11,06 м<sup>2</sup> - спальня</span>
+                    <span>7 м<sup>2</sup> - спальня</span>
                   </div>
                   <div class="terasse">
                     <img src="./img/terrace1.svg" alt="" />
-                    <span>23,74 м<sup>2</sup> - тераса</span>
+                    <span>9 м<sup>2</sup> - тераса</span>
                   </div>
                 </div>
               </div>
@@ -475,24 +589,51 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="plan_img">
+                  <div class="tool_tips">
+                    <img src="./img/button_info.svg" alt="" />
+                    <ul class="plan_tooltip">
+                      <div class="tiengle_up"></div>
+                      <li>
+                        5 м
+                        <sup>
+                          2
+                        </sup>
+                        - кухня
+                      </li>
+                      <li>
+                        3 м
+                        <sup>
+                          2
+                        </sup>
+                        - санвузол
+                      </li>
+                      <li>
+                        3 м
+                        <sup>
+                          2
+                        </sup>
+                        - кладова
+                      </li>
+                    </ul>
+                  </div>
                   <img src="./img/pl_1.png" alt="" />
                 </div>
                 <div class="plan_dscr">
                   <div class="area">
                     <img src="./img/blueprint1.svg" alt="" />
-                    <span> 30 м<sup>2</sup> </span>
+                    <span> 84 м<sup>2</sup> </span>
                   </div>
                   <div class="kitchen">
                     <img src="./img/kitchen1.svg" alt="" />
-                    <span> 27,14 м<sup>2</sup> - кухня-вітальня</span>
+                    <span> 27 м<sup>2</sup> - кухня-вітальня</span>
                   </div>
                   <div class="bedroom">
                     <img src="./img/bed1.svg" alt="" />
-                    <span>11,06 м<sup>2</sup> - спальня</span>
+                    <span>9 м<sup>2</sup> - спальні</span>
                   </div>
                   <div class="terasse">
                     <img src="./img/terrace1.svg" alt="" />
-                    <span>23,74 м<sup>2</sup> - тераса</span>
+                    <span>15 м<sup>2</sup> - тераса</span>
                   </div>
                 </div>
               </div>
@@ -500,13 +641,10 @@
                 <div class="relative_block">
                   <div class="proj_dscr">
                     <span class="proj_name">
-                      Барн
-                      <span class="gold_text">
-                        70
-                      </span></span
-                    >
+                      Барн-84
+                    </span>
                     <span class="proj_price">
-                      420 200 грн
+                      793 000 грн
                     </span>
                   </div>
                   <div class="slider slider_1">
@@ -536,13 +674,10 @@
                 <div class="relative_block">
                   <div class="proj_dscr">
                     <span class="proj_name">
-                      Барн
-                      <span class="gold_text">
-                        100
-                      </span></span
-                    >
+                      Барн-116
+                    </span>
                     <span class="proj_price">
-                      440 100 грн
+                      1 098 000 грн
                     </span>
                   </div>
                   <div class="slider slider_1">
@@ -566,24 +701,73 @@
               </div>
               <div class="col-lg-4">
                 <div class="plan_img">
-                  <img src="./img/pl_1.png" alt="" />
+                  <div class="tool_tips">
+                    <img src="./img/button_info.svg" alt="" />
+                    <ul class="plan_tooltip">
+                      <div class="tiengle_up"></div>
+
+                      <li>
+                        5 м
+                        <sup>
+                          2
+                        </sup>
+                        - санвузол
+                      </li>
+                      <li>
+                        11 м
+                        <sup>
+                          2
+                        </sup>
+                        - спальня
+                      </li>
+                      <li>
+                        10 м
+                        <sup>
+                          2
+                        </sup>
+                        - гостьова спальня
+                      </li>
+                      <li>
+                        4 м
+                        <sup>
+                          2
+                        </sup>
+                        - кладова
+                      </li>
+                      <li>
+                        5 м
+                        <sup>
+                          2
+                        </sup>
+                        - хол
+                      </li>
+                      <li>
+                        4 м
+                        <sup>
+                          2
+                        </sup>
+                        - тераса
+                      </li>
+                    </ul>
+                  </div>
+                  <img src="./img/pl_2.png" alt="" />
                 </div>
                 <div class="plan_dscr">
                   <div class="area">
                     <img src="./img/blueprint1.svg" alt="" />
-                    <span> 30 м<sup>2</sup> </span>
+                    <span> 116 м<sup>2</sup> </span>
                   </div>
                   <div class="kitchen">
                     <img src="./img/kitchen1.svg" alt="" />
-                    <span> 27,14 м<sup>2</sup> - кухня-вітальня</span>
+                    <span> 27 м<sup>2</sup> - кухня-вітальня</span>
                   </div>
                   <div class="bedroom">
                     <img src="./img/bed1.svg" alt="" />
-                    <span>11,06 м<sup>2</sup> - спальня</span>
+                    <span>11 м<sup>2</sup> - спальня</span>
                   </div>
                   <div class="terasse">
                     <img src="./img/terrace1.svg" alt="" />
-                    <span>23,74 м<sup>2</sup> - тераса</span>
+                    <span>24 м<sup>2</sup> - тераса</span>
                   </div>
                 </div>
               </div>
@@ -592,7 +776,7 @@
           <a
             class="btn_main"
             data-toggle="modal"
-            data-target="#modal_two"
+            data-target="#modal_fourth"
             href="#"
           >
             <span></span>
